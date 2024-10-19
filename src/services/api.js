@@ -10,15 +10,15 @@ const apiPortfolio = [
           id: Math.random(),
           title: 'Uangmu',
           stack: 'React js, Node js, Prisma ORM, PostgreSQL, Express js, Tailwind css, React Flowbite, Cloudinary, React Chart js, Email js',
-          image: './src/assets/Uangmu_Project.png',
-          url: UangmuImg
+          image: UangmuImg,
+          url: 'https://uang-mu.vercel.app/'
      },
      {
           id: Math.random(),
           title: 'Earthcare',
           stack: 'React js, Bootstrap, MockAPI, React Context, REST API, Email JS, Axios',
-          image: './src/assets/Earthcare_Project.png',
-          url: EarthcareImg
+          image: EarthcareImg,
+          url: 'https://earthcare.netlify.app/'
      },
      {
           id: Math.random(),
