@@ -1,4 +1,3 @@
-import React from "react";
 import apiPortfolio from "../services/api";
 
 const Portfolio = () => {
