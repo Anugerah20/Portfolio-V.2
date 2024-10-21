@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
@@ -15,9 +14,9 @@ const Contact = () => {
                               <span className="block leading-tight">Together</span>
                               <span className="block leading-tight">or Discuss <span className="text-orange-500">With Me?</span></span>
                               <div className="flex justify-center lg:justify-start mt-4">
-                                   <button className="btn btn-neutral flex items-center gap-2">
+                                   <a href="mailto:nabilanugerah20@gmail.com" className="btn btn-neutral flex items-center gap-2">
                                         <FaEnvelope className="text-2xl" /> Hire Me
-                                   </button>
+                                   </a>
                               </div>
                          </div>
                          <div>
