@@ -1,13 +1,21 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { IoChevronDown } from "react-icons/io5";
+import { toast } from "sonner";
 import Portfolio from "./Projects";
+import CV from "../uploads/CV_Nabil Anugerah Pangestu.pdf";
 
 const Card = () => {
 
      // Download File CV
      const downloadFile = () => {
-          window.location.href = "./src/uploads/CV_Nabil Anugerah Pangestu.pdf";
-     }
+          try {
+               window.open(CV, "_blank");
+
+          } catch (error) {
+               console.log(error);
+               toast.error("Gagal mendownload file");
+          }
+     };
 
      // use ref scroll portfolio
      const portfolioRef = useRef(null);
@@ -24,7 +32,7 @@ const Card = () => {
                <section className="flex flex-col px-8 py-20 bg-base-200 min-h-screen">
                     <main className="flex">
                          <div className="max-w-7xl">
-                              <h1 className="text-3xl font-bold my-5">Hey, I'm <span className="border-b-2 border-orange-500">Nabil <span className="text-orange-500">Anugerah Pangestu</span></span></h1>
+                              <h1 className="text-3xl font-bold my-5">Hey, I&apos;m <span className="border-b-2 border-orange-500">Nabil <span className="text-orange-500">Anugerah Pangestu</span></span></h1>
                               <h1 className="py-3 lg:text-6xl text-4xl font-semibold">
                                    <span className="text-orange-500">I specialize</span> in both building <span className="text-orange-500">web interfaces</span> and <span className="text-orange-500">backend systems.</span>
                               </h1>
