@@ -4,6 +4,7 @@ import UsedupImg from '../assets/Usedup_Project.png';
 import LandingPageKadulimusImg from '../assets/LandingPageKadulimus_Project.png';
 import TodoListImg from '../assets/TodoList_Project.png';
 import BMIImg from '../assets/BMI_Project.png';
+import KamiSehatImg from '../assets/KamiSehat_Project.png';
 
 const apiPortfolio = [
      {
@@ -48,6 +49,13 @@ const apiPortfolio = [
           stack: 'HTML5, CSS3, JavaScript, Toastify js',
           image: BMIImg,
           url: 'https://tpa2-nabil-bmi-calculator.netlify.app/'
+     },
+     {
+          id: Math.random(),
+          title: 'Kami Sehat',
+          stack: 'HTML5, Tailwind CSS, JavaScript',
+          image: KamiSehatImg,
+          url: 'https://kamisehat.netlify.app/'
      }
 ];
 
