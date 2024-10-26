@@ -1,6 +1,6 @@
 import apiPortfolio from "../services/api";
 
-const Portfolio = () => {
+const Projects = () => {
      return (
           <>
                <div className="m-10 text-center">
@@ -37,4 +37,4 @@ const Portfolio = () => {
      )
 }
 
-export default Portfolio;
+export default Projects;
