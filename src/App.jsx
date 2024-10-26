@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Tools from "./pages/Tools";
 import PublicLayout from "./layout/PublicLayout";
+import NotFound from "./pages/NotFound";
 
 // Manage react router dom
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path: '*',
+        element: <NotFound />,
+      }
     ],
   },
 ]);
