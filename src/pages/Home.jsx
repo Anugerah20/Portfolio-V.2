@@ -3,8 +3,9 @@ import { IoChevronDown } from "react-icons/io5";
 import { toast } from "sonner";
 import Portfolio from "./Projects";
 import CV from "../uploads/CV_Nabil Anugerah Pangestu.pdf";
+import TypingEffect from "react-typing-effect";
 
-const Card = () => {
+const Home = () => {
 
      // Download File CV
      const downloadFile = () => {
@@ -32,7 +33,7 @@ const Card = () => {
                <section className="flex flex-col px-8 py-20 bg-base-200 min-h-screen">
                     <main className="flex">
                          <div className="w-full">
-                              <h1 className="text-3xl font-bold my-5">Hey, I&apos;m <span className="border-b-2 border-orange-500">Nabil <span className="text-orange-500">Anugerah Pangestu</span></span></h1>
+                              <h1 className="text-3xl font-bold my-5">Hey, I&apos;m <span className="border-b-2 border-orange-500 text-orange-500"><TypingEffect text="Nabil Anugerah Pangestu" speed={100} eraseDelay={1000} /></span></h1>
                               <h1 className="py-3 lg:text-6xl text-4xl font-semibold">
                                    <span className="text-orange-500">I specialize</span> in both building <span className="text-orange-500">web interfaces</span> and <span className="text-orange-500">backend systems.</span>
                               </h1>
@@ -53,4 +54,4 @@ const Card = () => {
      )
 }
 
-export default Card;
+export default Home;
