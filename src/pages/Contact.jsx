@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
      return (
           <section className="m-10 flex justify-center items-center">
-               <div className="mx-auto max-w-7xl">
+               <div className="mx-auto max-w-5xl">
                     <div className="text-center">
                          <h1 className="text-4xl font-bold text-orange-500 mb-10">Get in Touch</h1>
                     </div>
@@ -20,7 +20,7 @@ const Contact = () => {
                               </div>
                          </div>
                          <div>
-                              <ul className="menu rounded-box">
+                              <ul className="menu">
                                    <h1 className="text-3xl font-bold text-orange-500 text-left lg:text-left ml-3">Contact Information</h1>
                                    <li className="text-xl font-bold flex items-start gap-3 mt-3">
                                         <a href="mailto:nabilanugerah20@gmail.com"><FaEnvelope className="text-3xl" /> nabilanugerah20@gmail.com</a>
