@@ -33,8 +33,8 @@ const Home = () => {
                <section className="flex flex-col px-8 py-20 bg-base-200 min-h-screen">
                     <main className="flex">
                          <div className="w-full">
-                              <h1 className="text-3xl font-bold my-5">Hey, I&apos;m <span className="border-b-2 border-orange-500 text-orange-500"><TypingEffect text="Nabil Anugerah Pangestu" speed={100} eraseDelay={1000} /></span></h1>
-                              <h1 className="py-3 lg:text-6xl text-4xl font-semibold">
+                              <h1 className="lg:text-3xl md:text-3xl text-2xl  font-bold my-5">Hey, I&apos;m <span className="border-b-2 border-orange-500 text-orange-500"><TypingEffect text="Nabil Anugerah Pangestu" speed={100} eraseDelay={1000} /></span></h1>
+                              <h1 className="py-3 lg:text-6xl md:text-4xl text-4xl font-semibold">
                                    <span className="text-orange-500">I specialize</span> in both building <span className="text-orange-500">web interfaces</span> and <span className="text-orange-500">backend systems.</span>
                               </h1>
 
