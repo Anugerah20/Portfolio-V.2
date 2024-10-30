@@ -3,12 +3,12 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
      return (
           <section className="m-10 flex justify-center items-center">
-               <div className="mx-auto max-w-5xl">
+               <div className="w-max">
                     <div className="text-center">
                          <h1 className="text-4xl font-bold text-orange-500 mb-10">Get in Touch</h1>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto">
-                         <div className="text-center lg:text-left lg:text-4xl text-3xl font-bold">
+                         <div className="text-center lg:text-left lg:text-4xl md:text-3xl text-2xl font-bold">
                               <span className="block leading-tight">Want to <span className="text-orange-500">Hire Me?</span></span>
                               <span className="block leading-tight">Interested in Working</span>
                               <span className="block leading-tight">Together</span>
@@ -20,19 +20,19 @@ const Contact = () => {
                               </div>
                          </div>
                          <div>
-                              <ul className="menu">
-                                   <h1 className="text-3xl font-bold text-orange-500 text-left lg:text-left ml-3">Contact Information</h1>
-                                   <li className="text-xl font-bold flex items-start gap-3 mt-3">
+                              <ul className="menu rounded-box">
+                                   <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-orange-500 text-left lg:text-left ml-3">Contact Information</h1>
+                                   <li className="lg:text-xl md:text-xl text-lg font-bold flex items-start gap-3 mt-3">
                                         <a href="mailto:nabilanugerah20@gmail.com"><FaEnvelope className="text-3xl" /> nabilanugerah20@gmail.com</a>
                                    </li>
-                                   <li className="text-xl font-bold flex items-start gap-3 mt-3">
-                                        <a href="https://www.linkedin.com/in/nabil-anugerah-pangestu/"><FaLinkedin className="text-3xl" /> Nabil Anugerah Pangestu</a>
+                                   <li className="lg:text-xl md:text-xl text-lg font-bold flex items-start gap-3 mt-3">
+                                        <a href="https://github.com/Anugerah20/"><FaGithub className="text-3xl" /> Anugerah20</a>
                                    </li>
-                                   <li className="text-xl font-bold flex items-start gap-3 mt-3">
+                                   <li className="lg:text-xl md:text-xl text-lg font-bold flex items-start gap-3 mt-3">
                                         <a href="https://instagram.com/anugerah_est/"><FaInstagram className="text-3xl" /> anugerah_est</a>
                                    </li>
-                                   <li className="text-xl font-bold flex items-start gap-3 mt-3">
-                                        <a href="https://github.com/Anugerah20/"><FaGithub className="text-3xl" /> Anugerah20</a>
+                                   <li className="lg:text-xl md:text-xl text-lg font-bold flex items-start gap-3 mt-3">
+                                        <a href="https://www.linkedin.com/in/nabil-anugerah-pangestu/"><FaLinkedin className="text-3xl" /> Nabil Anugerah Pangestu</a>
                                    </li>
                               </ul>
                          </div>
