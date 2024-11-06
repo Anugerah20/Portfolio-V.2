@@ -26,7 +26,7 @@ const apiPortfolio = [
           title: 'Usedup',
           stack: 'React js, Node js, Prisma ORM, PostgreSQL, Express js, Tailwind css, React Flowbite, Cloudinary, Midtrans, Email js, Redux Toolkit, Oauth2 Google',
           image: UsedupImg,
-          url: 'https://usedup.up.railway.app/'
+          url: 'https://usedup.vercel.app/'
      },
      {
           id: Math.random(),
