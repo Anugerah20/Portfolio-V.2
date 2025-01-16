@@ -1,19 +1,20 @@
 import React from "react";
 import NavList from "./NavList";
 import { NavLink } from "react-router-dom";
+import IconName from "../assets/icon-nabil.svg"
 
 const Nav = () => {
      return (
-          <div className="navbar bg-base-100">
+          <div className="navbar dark:bg-base-100 light:bg-base-100">
                <div className="navbar-start">
                     {/* Logo or Branding */}
                     <NavLink to="/" className="btn btn-ghost text-2xl">
-                         N A P
+                         <img src={IconName} className="w-10 h-10" alt="Icon Name" />
                     </NavLink>
                </div>
 
                {/* Hamburger menu for small screens */}
-               <div className="navbar-end lg:hidden">
+               <div className="navbar-end lg:hidden dark:bg-base-100 light:bg-base-100">
                     <div className="dropdown dropdown-left">
                          <div tabIndex={0} role="button" className="btn btn-ghost">
                               <svg
@@ -39,7 +40,7 @@ const Nav = () => {
                </div>
 
                {/* Navigation for large screens */}
-               <div className="navbar-end hidden lg:flex">
+               <div className="navbar-end hidden lg:flex dark:bg-base-100 light:bg-base-100">
                     <ul className="menu menu-horizontal px-1">
                          <NavList />
                     </ul>
