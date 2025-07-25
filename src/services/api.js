@@ -5,11 +5,27 @@ import LandingPageKadulimusImg from '../assets/LandingPageKadulimus_Project.png'
 import TodoListImg from '../assets/TodoList_Project.png';
 import BMIImg from '../assets/BMI_Project.png';
 import KamiSehatImg from '../assets/KamiSehat_Project.png';
+import PokemonImg from '../assets/Pokemon-api.png';
+import PortofolioMe from '../assets/Portofolio-me.png';
 
 // Unique ID
 import { v4 as uuidv4 } from 'uuid';
 
 const apiPortfolio = [
+     {
+          id: uuidv4(),
+          title: 'Pokemon API',
+          stack: 'Vue js, Pinia, Vue Router, Tailwind CSS, Typescript, Rest API',
+          image: PokemonImg,
+          url: 'https://karakter-poke.vercel.app/'
+     },
+     {
+          id: uuidv4(),
+          title: 'Portofolio Website',
+          stack: 'React js, Tailwind CSS, Daisy UI, React Router, React Icons',
+          image: PortofolioMe,
+          url: 'https://nabilanugerahpangestu.my.id/'
+     },
      {
           id: uuidv4(),
           title: 'Uangmu',
@@ -29,7 +45,7 @@ const apiPortfolio = [
           title: 'Usedup',
           stack: 'React js, Node js, Prisma ORM, PostgreSQL, Express js, Tailwind css, React Flowbite, Cloudinary, Midtrans, Email js, Redux Toolkit, Oauth2 Google',
           image: UsedupImg,
-          url: 'https://usedup.vercel.app/'
+          url: 'https://github.com/Anugerah20/Frontend-usedup'
      },
      {
           id: uuidv4(),
