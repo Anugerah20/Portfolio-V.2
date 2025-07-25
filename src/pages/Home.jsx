@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import { toast } from "sonner";
 import Portfolio from "./Projects";
-import CV from "../uploads/CV_Nabil Anugerah Pangestu.pdf";
+import CV from "../uploads/CV_NabilAnugerahPangestu.pdf";
 import TypingEffect from "react-typing-effect";
 
 const Home = () => {
