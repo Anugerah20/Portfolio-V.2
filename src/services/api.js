@@ -7,6 +7,7 @@ import BMIImg from '../assets/BMI_Project.png';
 import KamiSehatImg from '../assets/KamiSehat_Project.png';
 import PokemonImg from '../assets/Pokemon-api.png';
 import PortofolioMe from '../assets/Portofolio-me.png';
+import NewsNight from "../assets/News-night.png";
 
 // Unique ID
 import { v4 as uuidv4 } from 'uuid';
@@ -25,6 +26,13 @@ const apiPortfolio = [
           stack: 'React js, Tailwind CSS, Daisy UI, React Router, React Icons',
           image: PortofolioMe,
           url: 'https://nabilanugerahpangestu.my.id/'
+     },
+     {
+          id: uuidv4(),
+          title: 'News Night',
+          stack: 'React js, Typescript, Context, Tailwind css, Axios, Fetch API',
+          image: NewsNight,
+          url: 'https://github.com/Anugerah20/Typescript-API'
      },
      {
           id: uuidv4(),
