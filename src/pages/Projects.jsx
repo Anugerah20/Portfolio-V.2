@@ -9,8 +9,7 @@ const Projects = () => {
                <div className="max-w-7xl mx-auto my-5 px-5 lg:px-10 md:px-7 gap-x-4 gap-y-4 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
 
                     {apiPortfolio.map((item) => (
-                         // <a href={item.url} key={item.id} className="card bg-[#191e24] shadow-xl">
-                         <a href={item.url} key={item.id} className="card light:bg-white dark:bg-black shadow-xl">
+                         <a href={item.url} key={item.id} className="card border border-gray-700 shadow-xl">
 
                               <figure>
                                    <img
