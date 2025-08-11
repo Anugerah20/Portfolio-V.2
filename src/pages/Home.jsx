@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { IoChevronDown } from "react-icons/io5";
-import { toast } from "sonner";
+// import { toast } from "sonner";
 import Portfolio from "./Projects";
-import CV from "../uploads/CV_NabilAnugerahPangestu.pdf";
+// import CV from "../uploads/CV_NabilAnugerahPangestu.pdf";
 import TypingEffect from "react-typing-effect";
 import { Parallax } from "react-scroll-parallax";
 import Background from "../assets/background.jpg";
@@ -10,14 +10,14 @@ import Background from "../assets/background.jpg";
 export default function Home() {
      const portfolioRef = useRef(null);
 
-     const downloadFile = () => {
-          try {
-               window.open(CV, "_blank");
-          } catch (e) {
-               console.error(e);
-               toast.error("Gagal mendownload file");
-          }
-     };
+     // const downloadFile = () => {
+     //      try {
+     //           window.open(CV, "_blank");
+     //      } catch (e) {
+     //           console.error(e);
+     //           toast.error("Gagal mendownload file");
+     //      }
+     // };
 
      const scrollToPortfolio = () => {
           portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -52,11 +52,11 @@ export default function Home() {
                               <span className="text-orange-400">backend systems.</span>
                          </h2>
 
-                         <div className="mt-10">
+                         {/* <div className="mt-10">
                               <button onClick={downloadFile} className="btn btn-outline">
                                    Download CV
                               </button>
-                         </div>
+                         </div> */}
 
                          <button
                               onClick={scrollToPortfolio}
