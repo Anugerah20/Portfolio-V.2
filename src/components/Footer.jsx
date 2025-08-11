@@ -6,9 +6,9 @@ const Footer = () => {
 
      return (
           <>
-               <footer className="footer footer-center dark:bg-base-100 light:bg-base-100 text-base-content p-4">
+               <footer className="footer footer-center border-t border-gray-700 text-base-content p-4">
                     <aside>
-                         <p>Copyright © {currentYear} - All right reserved by N A P</p>
+                         <p>Copyright © {currentYear} - Created by <span className="font-bold capitalize">nabil anugerah pangestu</span></p>
                     </aside>
                </footer>
           </>
