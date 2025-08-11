@@ -5,16 +5,16 @@ import IconName from "../assets/icon-nabil.svg"
 
 const Nav = () => {
      return (
-          <div className="navbar dark:bg-base-100 light:bg-base-100">
+          <div className="navbar border-b border-gray-700">
                <div className="navbar-start">
                     {/* Logo or Branding */}
                     <NavLink to="/" className="btn btn-ghost text-2xl">
-                         <img src={IconName} className="w-10 h-10" alt="Icon Name" />
+                         <img src={IconName} className="w-10 h-10" alt="Icon Name" /><span className="text-2xl font-medium text-white uppercase">abil</span>
                     </NavLink>
                </div>
 
                {/* Hamburger menu for small screens */}
-               <div className="navbar-end lg:hidden dark:bg-base-100 light:bg-base-100">
+               <div className="navbar-end lg:hidden">
                     <div className="dropdown dropdown-left">
                          <div tabIndex={0} role="button" className="btn btn-ghost">
                               <svg
