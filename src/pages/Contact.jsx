@@ -3,11 +3,11 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
      return (
           <section className="m-10 flex justify-center items-center">
-               <div className="w-max">
+               <div className="max-w-full">
                     <div className="text-center">
                          <h1 className="text-4xl font-bold text-orange-500 mb-10">Get in Touch</h1>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 space-x-10 mx-20 border border-gray-700 rounded-md p-10">
                          <div className="text-center lg:text-left lg:text-4xl md:text-3xl text-2xl font-bold">
                               <span className="block leading-tight">Want to <span className="text-orange-500">Hire Me?</span></span>
                               <span className="block leading-tight">Interested in Working</span>
