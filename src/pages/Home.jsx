@@ -4,54 +4,76 @@ import { toast } from "sonner";
 import Portfolio from "./Projects";
 import CV from "../uploads/CV_NabilAnugerahPangestu.pdf";
 import TypingEffect from "react-typing-effect";
+import { Parallax } from "react-scroll-parallax";
+import Background from "../assets/background.jpg";
 
-const Home = () => {
+export default function Home() {
+     const portfolioRef = useRef(null);
 
-     // Download File CV
      const downloadFile = () => {
           try {
                window.open(CV, "_blank");
-
-          } catch (error) {
-               console.log(error);
+          } catch (e) {
+               console.error(e);
                toast.error("Gagal mendownload file");
           }
      };
 
-     // use ref scroll portfolio
-     const portfolioRef = useRef(null);
-
-     // Scroll to portfolio
      const scrollToPortfolio = () => {
-          if (portfolioRef.current) {
-               portfolioRef.current.scrollIntoView({ behavior: "smooth" });
-          }
-     }
+          portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+     };
 
      return (
           <>
-               <section className="flex flex-col px-8 py-20 bg-base-200 min-h-screen">
-                    <main className="flex">
-                         <div className="w-full">
-                              <h1 className="lg:text-3xl md:text-3xl text-2xl  font-bold my-5">Hey, i&apos;m <span className="border-b-2 border-orange-500 text-orange-500"><TypingEffect text="Nabil Anugerah Pangestu." speed={80} eraseDelay={1000} /></span></h1>
-                              <h1 className="py-3 lg:text-6xl md:text-4xl text-4xl font-semibold">
-                                   <span className="text-orange-500">I specialize</span> in both building <span className="text-orange-500">web interfaces</span> and <span className="text-orange-500">backend systems.</span>
-                              </h1>
+               <section className="relative min-h-screen md:min-h-[100svh] overflow-hidden">
+                    <Parallax translateY={[-160, 160]} className="absolute inset-0 -z-10 h-full w-full">
+                         <img
+                              src={Background}
+                              alt="Parallax-Background"
+                              className="h-full w-full object-cover"
+                              loading="eager"
+                         />
+                    </Parallax>
 
-                              <div className="flex mt-2">
-                                   <button onClick={downloadFile} className="btn btn-outline">Download CV</button>
-                              </div>
-                              <span className="flex justify-center text-center animate-bounce mt-14">
-                                   <button onClick={scrollToPortfolio} className="text-center flex justify-center items-center gap-2 text-md font-bold transition hover:delay-100 hover:text-orange-500"> <IoChevronDown /> Show Projects</button>
+                    <div className="absolute inset-0 -z-10 bg-black/40" />
+
+                    <div className="relative z-10 mx-auto max-w-6xl min-h-screen md:min-h-[100svh] px-6
+                        flex flex-col items-center justify-center text-center">
+                         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+                              Hey, i&apos;m{" "}
+                              <span className="border-b-2 border-orange-500 text-orange-400">
+                                   <TypingEffect text="Nabil Anugerah Pangestu." speed={80} eraseDelay={1000} />
                               </span>
-                         </div>
-                    </main>
-               </section>
-               <div className="mt-24 lg:mt-28" ref={portfolioRef}>
-                    <Portfolio />
-               </div>
-          </>
-     )
-}
+                         </h1>
 
-export default Home;
+                         <h2 className="mt-6 font-semibold leading-tight text-white text-4xl md:text-5xl lg:text-6xl">
+                              <span className="text-orange-400">I specialize</span> in both building{" "}
+                              <span className="text-orange-400">web interfaces</span> and{" "}
+                              <span className="text-orange-400">backend systems.</span>
+                         </h2>
+
+                         <div className="mt-10">
+                              <button onClick={downloadFile} className="btn btn-outline">
+                                   Download CV
+                              </button>
+                         </div>
+
+                         <button
+                              onClick={scrollToPortfolio}
+                              className="mt-12 flex items-center gap-2 text-white font-semibold hover:text-orange-500 transition animate-bounce"
+                         >
+                              <IoChevronDown /> Show Projects
+                         </button>
+
+                         <div className="pointer-events-none absolute inset-0 rounded-[2rem]" />
+                    </div>
+               </section>
+
+               <section className="bg-base-200 py-24 px-6" ref={portfolioRef}>
+                    <div className="mx-auto max-w-6xl">
+                         <Portfolio />
+                    </div>
+               </section>
+          </>
+     );
+}
