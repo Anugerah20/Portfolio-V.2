@@ -21,7 +21,7 @@ const Tools = () => {
                          <h1 className="text-4xl font-bold text-orange-500 p-2">My Tools</h1>
                     </div>
                </div>
-               <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 my-10">
+               <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-5 my-10">
                     <div className="flex flex-col items-center justify-center gap-y-2">
                          <FaHtml5 className="text-8xl" />
                          <h1 className="text-2xl font-bold">HTML5</h1>
